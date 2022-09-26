@@ -1,0 +1,2 @@
+# stm32f429i_imu_lcd
+This project has two major parts. Firstly, it reads and filters the data from IMU sensor (either mpu6050 or 9250), then it evaluates the yaw, roll and pitch angles. Secondly it'll activate the lcd screen, display and image of the sensor and print the evaluated sensor datas on the screen. It has considerable delay, which is due to the timers. I didn't activate a new timer to send sensor data to the buffer of the screen display. This retarded data issue can be solved by activating a new timer and assigning it as an interrupt. 
